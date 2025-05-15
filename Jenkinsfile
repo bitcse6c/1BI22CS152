@@ -23,6 +23,10 @@ stage('Test'){
       sh 'mvn test'
   }
 }
+    stage('Deploy'){
+      steps{
+        echo 'Deploy'
+        sh 'sudo cp target/MyMavenApp.war /opt/tomcat/webapps'
 
 }
 post{
