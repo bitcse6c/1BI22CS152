@@ -32,7 +32,7 @@ stage('Deploy War'){
 }
 }
 post{
-  sucMyMavenApp.warcess{
+  success{
     echo "Successfully Excuted"
 }
   failure{
