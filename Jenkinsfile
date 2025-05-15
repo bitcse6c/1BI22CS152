@@ -26,9 +26,7 @@ stage('Test'){
 stage('Deploy War'){
   steps{
     echo 'Copied'
-    sh 
-
-'sudo cp /target/MyMavenApp.war /opt/tomcat/webapps/'
+    sh 'sudo cp /target/MyMavenApp.war /opt/tomcat/webapps/'
 
 }
 }
