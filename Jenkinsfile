@@ -20,15 +20,9 @@ pipeline{
 stage('Test'){
   steps{
       echo 'Test'
-      sh 'stage('Deploy War'){
-  steps{
-    echo 'Copied'
-    sh 'sudo cp /target/MyMavenApp.war /opt/tomcat/webapps/'
-
-}
-}
-}mvn test'
+      sh 'mvn test'
   }
+}
 
     stage('Deploy'){
       steps{
