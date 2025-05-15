@@ -29,6 +29,7 @@ stage('Test'){
         sh 'sudo cp target/MyMavenApp.war /opt/tomcat/webapps'
 
 }
+    }
 post{
   success{
     echo "Successfully Excuted"
